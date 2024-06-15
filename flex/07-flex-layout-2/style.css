@@ -8,22 +8,67 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding-left: 12px;
 }
 
 .footer {
   height: 72px;
   background: #eee;
   color: darkmagenta;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
   width: 300px;
   background: royalblue;
   box-sizing: border-box;
+  flex-shrink: 0;
+  padding: 16px;
 }
 
 .card {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+  max-width: 300px;
+  padding: 16px;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  display: flex;
+  flex: 1;
+}
+
+ul li a {
+  color: white; /* This will inherit the color from the parent element */
+  text-decoration: none; /* This will remove the underline */
+  font-size: 24px;
+}
+ul {
+  list-style-type: none; /* This will remove the bullet points */
+  padding: 0; /* This will remove the default padding */
+  margin: 0; /* This will remove the default margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 12px;
+}
+
+.cards{
+  display: flex;
+  gap: 32px;
+  padding: 48px;
+  flex-wrap: wrap;
 }
